@@ -10,13 +10,19 @@
 
 
 ## Explicit intents help us move from one activity to another
-  - Syntax 1
-		Intent in = new Intent(fromActivity_this, toActivity_className.class);
-		startActivity(in);
-  - Syntax 2
-      	Intent in = new Intent("com.package.toActivity_className");
-		startActivity(in);
-  - Syntax 3
-      	Intent in = new Intent();
-		in.setClassName("packageNameOfApp", "packageName.className");
-		startActivity(in);						
+  - **Syntax 1** 
+``` 
+	Intent in = new Intent(fromActivity_this, toActivity_className.class);
+	startActivity(in);
+```
+  - **Syntax 2** 
+```
+	Intent in = new Intent("com.package.toActivity_className");
+	startActivity(in);
+```
+  - **Syntax 3** 
+```
+	Intent in = new Intent();
+	in.setClassName("packageNameOfApp", "packageName.className");
+	startActivity(in);						
+```
